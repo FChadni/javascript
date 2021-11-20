@@ -1,0 +1,96 @@
+
+<script>
+    //if statement
+    function ifStatement(){
+    }
+    ifStatement();
+
+    /** comparison operators
+     *  == equal
+     *  === strict equal no conversion
+     *  != not equal
+     *  !== strict not equal no conversion
+     *  > greater than
+     *  < less than
+     *  >= greater than or equal to
+     *  <= less than or equal to
+     *  && and
+     *  || or
+     */
+
+    //nested if statement
+    function example2 (num){
+        if (num > 5){
+            return "Tiny";
+        }
+        else if (num < 10){
+            return "Small";
+        }
+        else if(num < 15){
+            return "Medium";
+        }
+        else if(num < 20){
+            return "Large";
+        } else{
+            return "Huge";
+        }
+    }
+    console.log(example2(7));
+
+    //Switch statement
+    //Default:
+    function switchStatement(val){
+        var ans = "";
+        switch (val){
+            case 1:
+                ans = "alpha";
+                break;
+            case 2:
+                ans = "beta";
+                break;
+            case 3:
+                ans = "gamma";
+                break;
+            case 4:
+                ans = "delta";
+                break;
+            default:
+                ans = "stuff";
+                break;
+        }
+        return ans;
+    }
+    console.log(switchStatement(1))
+
+    //Switch statement Omitted
+    //Default:
+    function switchStatementOmit(val){
+        var ans = "";
+        switch (val){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                ans = "alpha";
+                break;
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+                ans = "beta";
+                break;
+            default:
+                ans = "stuff";
+                break;
+        }
+        return ans;
+    }
+    console.log(switchStatementOmit(7))
+
+    //Returning boolean
+    function isLess (a,b){
+        return (a < b);
+    }
+    console.log(isLess(5,10));
+
+</script>

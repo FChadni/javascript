@@ -1,0 +1,42 @@
+<script>
+    //Declare Sting Variable
+    var firstName = "Tom";
+    var lastName = "J";
+
+    //string with quote: escape
+    /**
+     \' single quote
+     \" double quote
+     \\ backslash
+     \n newline
+     \r carriage return
+     \t tab
+     \b backspace
+     \f form feed
+     */
+    var str1 = "This is a \"quoted\" string";
+    var str2 = 'This is a "quoted" string';
+    var str3 = `"This is's a "quoted" string"`;
+    console.log(str1);
+    console.log(str2)
+    console.log(str3)
+    var str4 = "first line\n\t\\ second line\r\n third line\b\f";
+    console.log(str4)
+
+    //Concatenate String "+" or "+="
+    var addStr1 = "first name " + "second name";
+    var addStr2 = "first name ";
+    addStr2 += "second name";
+    console.log(addStr1)
+    console.log(addStr2)
+
+    //Find length of String
+    var lengthStr = addStr1.length
+    console.log(lengthStr)
+
+    //Bracket Notation
+    var strIndex = addStr1[0]
+    console.log(strIndex)
+
+    //String Immutability: cannot be alter once created
+</script>

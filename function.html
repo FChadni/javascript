@@ -1,0 +1,51 @@
+
+<script>
+    //writing a function
+    function example() {
+        console.log("Hello World");
+    }
+    example();
+
+    //Passing arguments to function: Parameters
+    function example2 (a,b){
+        console.log(a+b);
+        numGlobal2 = 5; //this is global since has no "var" keyword
+        var numGlobal3 = 15; // local scope
+    }
+    example2(5,20);
+
+    //Global Scope: available everywhere
+    var numGlobal = 10;
+
+    function example3(){
+        if (typeof numGlobal != 'undefined'){
+            console.log(numGlobal);
+        }
+        if (typeof numGlobal2 != 'undefined'){
+            console.log(numGlobal2);
+        }
+        if (typeof numGlobal3 != 'undefined'){
+            console.log(numGlobal3);
+        }
+    }
+    example3();
+
+    //Global Scope vs Local Scope: local overrides global in function
+
+    //Return from function: return
+    function example4(num){
+        return num - 5;
+    }
+    console.log(example4(10));
+
+    //Stand in Line: queue
+    function example5(arr, item){
+        arr.push(item);
+        return arr.shift();
+    }
+    var testArr = [1,2,3,4,5];
+    console.log("Before: " + JSON.stringify(testArr));
+    console.log(example5(testArr,6));
+    console.log("After: " + JSON.stringify(testArr));
+
+</script>
