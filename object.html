@@ -1,0 +1,72 @@
+
+<script>
+    //Objects: similar to arrays (key value storage like dictionary) {properties : value}
+    var animals = {
+        "cat" : "tom",
+        "dog" : "bob",
+        "horse" : {"don":25}
+    }
+    var catName1 = animals.cat;  //access property value
+    var catName2 = animals['cat'];
+    console.log(catName1);
+    console.log(catName2)
+
+    //update object property
+    animals.cat = "happy";
+    console.log(animals.cat);
+    //add object to property
+    animals.mouse = "lolo";
+    console.log(animals.mouse);
+    //delete object from property
+    delete animals.mouse;
+    console.log(animals);
+
+    function object(val){
+        var  ans = "";
+
+        var lookUp = {
+            1:"alpha",
+            2:"beta",
+            3:"gamma",
+            4:"delta",
+        };
+
+        // switch (val){
+        //     case 1:
+        //         ans = "alpha";
+        //         break;
+        //     case 2:
+        //         ans = "beta";
+        //         break;
+        //     case 3:
+        //         ans = "gamma";
+        //         break;
+        //     case 4:
+        //         ans = "delta";
+        //         break;
+        //     default:
+        //         ans = "stuff";
+        //         break;
+        // }
+
+        ans = lookUp[val];
+        return ans;
+    }
+    console.log(object(2));
+
+    //check if object has property
+    function checkObj(check){
+        if (animals.hasOwnProperty(check)){
+            return animals[check];
+        } else{
+            return "Not found";
+        }
+    }
+    console.log(checkObj("idk"));
+
+    //accessing nested object
+    console.log(animals.horse.don);
+    //accessing nested array and object
+    //animals[1].list[1]
+    
+</script>

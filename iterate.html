@@ -1,0 +1,52 @@
+<script>
+    //while loop
+    var arr = [];
+    var i = 10;
+    while (i < 5){
+        arr.push(i);
+        i++;
+    }
+    console.log(arr);
+
+    do{
+        arr.push(i);
+        i++;
+    } while (i < 5)
+    console.log(arr);
+
+
+    //for loop increment
+    var incrementArr = [];
+    for (var j =0; j< 5; j++){
+        incrementArr.push(j)
+    }
+    console.log(incrementArr);
+    //for loop  decrement
+    var decrementArr = [];
+    for (var j =5; j> 0; j--){
+        decrementArr.push(j)
+    }
+    console.log(decrementArr);
+
+
+    //Iterate through an array using for loop
+    var total = 0;
+    for (var i =0; i<incrementArr.length; i++){
+        console.log(incrementArr[i]); //prints the elements
+        total += incrementArr[i];     //adds all the element of array
+    }
+    console.log(total);
+
+
+    //Iterate through an 3d array using for loop
+    threeDArr = [[1,2,3], [4,5,6],[7,8,9]];
+    var pro = 1;
+    for (var i=0; i <threeDArr.length; i++){
+        console.log(threeDArr[i]);
+        for(var j = 0; j<threeDArr[i].length; j++){
+            console.log(threeDArr[i][j]);
+            pro *= threeDArr[i][j];
+        }
+    }
+    console.log(pro)
+</script>
