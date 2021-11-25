@@ -1,0 +1,41 @@
+
+<script>
+    var contacts = [
+        {
+            "firstname": "Akira",
+            "lastname": "Laine",
+            "number": "0555555555",
+            "likes": ["Pizza", "Coding", "Brownie"]
+        },
+        {
+            "firstname":"Harry",
+            "lastname":"Potter",
+            "number":"1555555555",
+            "likes":["Hogwarts", "Magic", "Hagrid"]
+        },
+        {
+            "firstname":"Sherlock",
+            "lastname":"Holmes",
+            "number":"2555555555",
+            "likes":["Tomato", "Violin"]
+        },
+        {
+            "firstname":"Kristian",
+            "lastname":"Vos",
+            "number":"unknown",
+            "likes":["JavaScript", "Gaming", "Foxes"]
+        }
+    ];
+
+    function lookUpProfile(name, prop){
+        for (var i=0; i<contacts.length; i++){
+            if(contacts[i].firstname === name){
+                return contacts[i][prop] || "No such prop";
+            }
+        }
+        return "None";
+    }
+    var data = lookUpProfile("Akira", "likes");
+    console.log(data);
+
+</script>
