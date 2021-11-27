@@ -58,4 +58,3 @@ arr2 = [].concat(arr1, [7,8]);
 arr2 = [...arr1,7,8];
 console.log("copied arr1 and added new items: ",arr2);
 
-//03:26:12 For loop in array
